@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.caja{
+    position: relative;
+    margin: 0 auto;
+    width: auto;  
+}
+header{
+    background: #158dac;
+    display: flexbox;
+    height:6cm;
+}
+
+.productos{
+    width: 1500px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid rgb(100, 60, 212);
+    border-radius: 10%;
+
+    background: linear-gradient(100deg,rgb(145, 241, 136),rgb(150, 150, 248),rgb(248, 178, 98),rgb(114, 206, 235));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+.productos li:hover{
+    border-color: rgb(241, 92, 6);
+    background: #00d7f3;
+
+}
+
+.productos li:active{
+    border-color: rgb(47, 231, 108);
+}
+.productos li:hover h2{
+    font-size: 40px;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.imagenluna{
+    width: 60%;
+    height: 30%;
+
+}
+.imagencuadrado{
+    width: 60%;
+    
+}
+.imagencorazon{
+    width: 60%;
+}
+nav{
+    position: absolute;
+    top: 180px;
+    right: 28px;
+
+
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+nav a{
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(143, 32, 207);
+}
+.descripcionProducto{
+    font-size: 18px;
+
+}
+.precioProducto{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+   
+    padding: 40px;
+    text-align: center;
+    background: #000000;
+    height: 6cm;
+}
+.textoCopyrigh{
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin: -2cm;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+form{
+    margin: 40px 0;
+}
+form label, form p{
+    display: block;
+    font-size: 2opx;
+    margin: 0 0 10px;
+}
+.input_padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin:20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(107, 183, 228);
+    border:none ;
+    border-radius: 5px;
+    transition: 5s all;
+    cursor:pointer;
+
+}
+.enviar:hover{
+    background: rgb(4, 0, 255);
+    transform: scale(1,1.5) rotate(-3deg);
+   
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: rgb(97, 97, 97);
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*Aqui inicia el css para la pagina principal*/
+
+.principal{
+    padding: 3em 0;
+    background: #fcfcfc;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1cm;
+    clear: left;
+    text-shadow: 1px 1px blue;
+}
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+.principal p{
+    margin: 0 0 1cm;
+}
+.principal strong{
+    font-weight: bold;
+
+}
+.principal em{
+    font-style: italic;
+    width: 940px;
+    margin: 0 auto;
+}
+.imagenImpresora{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0 ;
+}
+.mapa{
+    padding: 3em 0;
+    background:linear-gradient(rgb(255, 255, 255),#00d7f3);
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+
+}
+.diferenciales{
+    background: #00d7f3;
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 2.5;
+}
+.items:first-child{
+    font-weight: bold;
+}
+.items:before{
+    content: "★";
+}
+.imagen-diferenciales{
+    width: 60%;
+    height: 10cm;
+    box-shadow: 10px 10px 30px 15px rgb(77, 219, 238);
+    
+}
+.imagen-diferenciales:hover{
+    opacity: 0.5;
+    transition: 400ms;
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .caja,.principal .mapa-contenido .contenido-diferenciales .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}

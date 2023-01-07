@@ -1,0 +1,49 @@
+body{
+    background: #c5b2f8;
+}
+.titulo-principal{
+    text-align: center
+}
+header{
+    text-align: center;
+}
+.imagenprincipal{
+    image-orientation: flip;
+   
+}
+.principal{
+    background: rgb(174, 137, 233);
+    padding: 20px;
+}
+p1{
+    text-align: center;
+}
+.titulo-centralizado{
+    text-align: center;
+}
+em strong{
+    color: rgb(33, 18, 236);
+}
+#litofania{
+    font-size: 20px;
+}
+.diferenciales{
+    background: #7f58eb;
+    padding: 30px;
+}
+.items{
+    font-style: italic;
+    text-decoration-color: blue;
+}
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 10%;
+}
+.imagenDiferenciales{
+    width: 50%;
+    height: 50%;
+    image-orientation: flip;
+}
+
