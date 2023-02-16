@@ -1,0 +1,33 @@
+.productos__producto{
+    display: flex;
+    height: 20rem;
+
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    
+    margin: 0 1.5% 10%;
+   
+    box-sizing: border-box;
+    border: 5px solid rgb(100, 60, 212);
+    border-radius: 10%;
+
+    background: linear-gradient(100deg,rgb(145, 241, 136),rgb(150, 150, 248),rgb(248, 178, 98),rgb(114, 206, 235));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+.productos__producto:hover{
+    border-color: rgb(241, 92, 6);
+    background: #00d7f3;
+}
+.productos__producto:active{
+    border-color: rgb(241, 92, 6);
+    background: #00d7f3;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}

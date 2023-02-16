@@ -1,0 +1,75 @@
+.productos li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid rgb(100, 60, 212);
+    border-radius: 10%;
+
+    background: linear-gradient(100deg,rgb(145, 241, 136),rgb(150, 150, 248),rgb(248, 178, 98),rgb(114, 206, 235));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+.productos li:hover{
+    border-color: rgb(241, 92, 6);
+    background: #00d7f3;
+
+}
+
+.productos li:active{
+    border-color: rgb(47, 231, 108);
+}
+.productos li:hover h2{
+    font-size: 40px;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.imagencuadrado{
+    width: 60%;
+    
+}
+.imagencorazon{
+    width: 60%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+nav a{
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(143, 32, 207);
+}
+.descripcionProducto{
+    font-size: 18px;
+
+}
+.precioProducto{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}

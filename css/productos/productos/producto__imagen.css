@@ -1,0 +1,30 @@
+:root{
+    --windthimagen:9rem;
+    --heigthimagen:10rem;
+}
+.producto__imagen{
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: var(--windthimagen);
+    height: var(--heigthimagen);
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.producto__imagen-luna{
+   
+    background-image: url(/imagenes/luna.jpg);
+
+}
+.producto__imagen-cuadrado{
+    background-image: url(/imagenes/productos/cuadro.jpg);
+
+
+}
+.producto__imagen-corazon{
+    background-image: url(/imagenes/productos/corazon.jpg);
+ 
+
+}
+
