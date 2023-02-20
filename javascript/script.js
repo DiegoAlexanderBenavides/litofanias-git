@@ -1,5 +1,8 @@
+import checkComplete from "../component/chechComplete.js";
+import deleteicon from "../component/deleteIcon.js";
+
 ( ()=>{
-const btn= document.querySelector("[data-form-btn]");
+   const btn= document.querySelector("[data-form-btn]");
 
 const createtask=(evento)=>{
     evento.preventDefault();
@@ -11,18 +14,16 @@ const createtask=(evento)=>{
     task.classList.add('card')
     const taskcontent=document.createElement("div");
     taskcontent.appendChild(checkComplete());
+    
     const titleTask=document.createElement("span");
     titleTask.classList.add("task");
     titleTask.innerHTML=value;
     taskcontent.appendChild(titleTask);
+    taskcontent.appendChild(deleteicon());
 
-    const content=`
-    ${checkComplete}
-    <span class="task">${value}</span>
-  
-  <i class="fas fa-trash-alt trashIcon icon"></i>`
   //task.innerHTML=content;
   task.appendChild(taskcontent);
+  task.appendChild(deleteicon());
   list.appendChild(task)
 
     console.log(value)
@@ -30,19 +31,6 @@ const createtask=(evento)=>{
 }
 console.log(btn);
 btn.addEventListener('click', createtask);
-const checkComplete=()=>{
-    const i=document.createElement("i");
-    i.classList.add("far",'fa-check-square','icon');
-    i.addEventListener('click', completeTask);
-    return i;
-}
 
-const completeTask=(event)=>{
-    const element=event.target;
-    element.classList.toggle('fas');
-    element.classList.toggle('completeIcon');
-    element.classList.toggle('far');
 
-    
-}
 })();
