@@ -14,6 +14,8 @@ header{
     background: #158dac;
     display: flexbox;
     height:6cm;
+    display: flex;
+    
 }
 
 
@@ -112,6 +114,44 @@ td,th{
     width: 940px;
     margin: 0 auto;
 }
+.menu {
+    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    margin: 0 10px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+.cajaImagenPerro {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagenprincipal {
+    width: 120px;
+    margin-top: 2px;
+  }
 .imagenImpresora{
     width: 120px;
     float: left;
