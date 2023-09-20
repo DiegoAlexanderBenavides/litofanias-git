@@ -12,11 +12,13 @@ body{
 }
 header{
     background: #158dac;
-    display: flexbox;
+ 
     height:6cm;
     display: flex;
+    justify-content: space-between;
     
 }
+
 
 
 footer{
@@ -114,15 +116,18 @@ td,th{
     width: 940px;
     margin: 0 auto;
 }
-.menu {
-    justify-content: flex-end;
+
+  .menu{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+
   }
-  
   .menu ul {
+    
+    display: flex;
+    
     list-style: none;
-    padding: 0;
+    padding-top: 180px;
     margin: 0;
   }
   

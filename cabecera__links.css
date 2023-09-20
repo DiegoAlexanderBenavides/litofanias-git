@@ -1,0 +1,14 @@
+.cabecera__links-link{
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(225, 239, 241);
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+
+}
+.cabecera__links{
+    display: flex;
+    
+}

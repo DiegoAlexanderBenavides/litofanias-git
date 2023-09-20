@@ -1,0 +1,9 @@
+.productos{
+    width: 1500px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    flex-direction: row;
+    
+}
